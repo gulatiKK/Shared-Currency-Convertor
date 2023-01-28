@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krishna's Area Calculators</title>
+        <meta name="description" content="Awesome blog by Krishna">
+        <meta name="keywords" content="web design blog, web dev blog,Krishna">
+        <script src="area calculators javascript.js"></script>
+        <style type="text/css">
+        #main-header{
+            
+        
+            text-align: center;
+            font-size:18px;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- <button onclick="myFunction()" class="a button">Square area calculator</button> -->
+
+<script>
+function myFunction() {
+  location.replace("squarearea.html")
+}
+</script>
+        <!-- <button onclick="rectanglecalculatorfunction()" class="a button">Rectangle area calculator</button>
+        <button onclick="circlecalculatorfunction()" class="a button">Circle area calculator</button> -->
+
+        <script>
+            function rectanglecalculatorfunction(){
+                location.replace("rectangle.html")
+                }
+       
+        </script>
+
+        <script>
+            function circlecalculatorfunction(){
+                location.replace("circle.html")
+            }
+        </script>
+
+<div id="rectangle_box">
+        <header id="main-header">
+            <h1>Rectangle area calculator</h1>
+        </header>
+
+        
+            <h3>Rectangle</h3>
+            <label for="length">Length of rectangle:</label>
+<input type="number" id="length" name="length" onchange="rectangleFunction()">
+<br>
+<br>
+<label for="bredth">Bredth of rectangle</label>
+<input type="number" id="bredth" name="bredth" onchange="rectangleFunction()">
+            <br>
+            <h2 id="result">Area: </h2>
+
+        <title>Square area</title>
+
+        
+    </div>
+    <div id="square_box">
+
+        <header id="main-header">
+        
+<head>
+    <style type="text/css">
+    #main-header{
+        text-align:center;
+        background-color:black;
+        color:aqua;
+        padding:10px;
+    }
+    </style>
+</head>
+
+<h1>Square area calculator</h1>
+</header>
+
+
+    <h3>Square</h3>
+    <label for="Side">Side of square:</label>
+<input type="number" id="Side" name="Side" onchange="squareFunction()">
+    <h2>Area</h2>
+    <label id="area"></label>
+    </div>
+    <div id="circle_box">
+    <br>
+    <header id="main-header">
+        
+        <h1>Circle area calculator</h1>
+    </header>
+    <br>
+        <h3>Circle</h3>
+        <label for="Radius">Radius of Circle:</label>
+<input type="number" id="Radius" name="Radius" onchange="circleFunction()">
+        <br>
+        <h2>Area: </h2>
+        <label id="AreaofCircle"></label>
+    
+    <footer id="Main-footer">
+        <p>Copyright &copy; 2021, Krishna's Website</p>
+        
+    </footer>
+    </div>
+        
+
+    </body>
+                
+</html>

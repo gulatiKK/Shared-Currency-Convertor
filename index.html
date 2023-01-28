@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Convertor</title>
+</head>
+<body>
+    <p class="intro">This website can covert 6 currencies, AUD, USD, YEN, CAD, EUR and INR!</p>
+    <br>
+    <br>
+    <br>
+    <p>Please chose the currency you want to convert</p>
+    <br>
+    <br><br><br>
+    <label>
+    <select name="OC" id="OC" class="drop">
+        <option value="Instruction">Choose the currency here!</option>
+        <option value="AUD" id="aud">AUD</option>
+        <option value="USD" id="usd">USD</option>
+        <option value="YEN" id="yen">YEN</option>
+        <option value="CAD" id="cad">CAD</option>
+        <option value="EUR" id="eur">EUR</option>
+        <option value="INR" id="inr">INR</option>
+    </select>
+    </label>
+    <br><br><br><br><br>
+<p class="drop">Enter the amount here:</p>
+<br><br>
+    <input type="number" id="amount">
+    <button onclick="Check()">CONVERT</button>
+    <br>
+    <br><br>
+    <br><br>
+    <ol>
+    <li class="answers"><label id="1"></label><br></li>
+    <li class="answers"><label id="2"></label><br></li>
+    <li class="answers"><label id="3"></label><br></li>
+    <li class="answers"><label id="4"></label><br></li>
+    <li class="answers"><label id="5"></label><br></li>
+    </ol>
+</body>
+<script src="script.js"></script>
+</html>

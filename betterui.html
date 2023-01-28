@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="betterui.css">
+    <title>Currency Convertor</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- <div class = "container">
+        <div class = popUp>
+        <img src="tick.png">
+        <button type = "button">OK</button>
+        </div> -->
+    </div>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Currency Convertor</h1>
+            <nav class="fix">
+                <ul>
+                    <a href="./area.html" target="_blank"><li>Area Calculators</li></a>
+                    <a href="./vertical-slider.html" target="_blank"><li>Vertical Slider</li></a>
+                    <a href="./random.html" target="_blank"><li>Random Choice Picker</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>About this website:</h1>
+                <p>This website can convery up to 6 currencies. That includes AUD, USD, Japenese YEN, CAD, EURO and INR</p>
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Convert a currency:</h2>
+                <h3>Original Currency</h3>
+                 <form>
+                    <div class="form-control">
+                        <select required id="oc">
+                            <option value="AUD">AUD</option>
+                            <option value="USD">USD</option>
+                            <option value="YEN">Japenese YEN</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EURO</option>
+                            <option value="INR">INR</option>
+                        </select>
+                        <br>
+                        <h3 class="subs">What do you want to convert it to?</h3>
+                        <select required id="nc">
+                            <option value="AUD">AUD</option>
+                            <option value="USD">USD</option>
+                            <option value="YEN">Japenese YEN</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EURO</option>
+                            <option value="INR">INR</option>
+                        </select>
+
+                        <h3 class="subs">How much is there?</h3>
+                        <input type="number" id="amt">
+                        <label id="ans"></label>
+                    </div>
+                    <button class="btn btn-primary" onclick="cc()">CONVERT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                Some other things that we have made:
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <span class="dot"></span>
+                    <h3>Area Calculators</h3>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-5x"></i>
+                    <h3>Random Choice Picker</h3>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-sliders2-vertical" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5ZM2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Zm3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5ZM8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1Zm3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5Zm2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Z"/>
+                      </svg>
+                    <h3>Vertical Slider</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Currency Convertor
+                </h1>
+                <p>Copyright Krishna and Akshat &copy; 2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="betterui.js"></script>
+</html>
